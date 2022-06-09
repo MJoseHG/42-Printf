@@ -13,7 +13,6 @@
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include "../libft/libft.h"
 # include <stdarg.h>
 # include <stdio.h>
 # include <stdlib.h>
@@ -25,7 +24,7 @@ typedef struct s_print
 	int		len;
 }			t_print;
 
-int			ft_printf(const char *str, ...);
+int			ft_printf(const char *format, ...);
 
 void		ft_putchar(char c);
 void		ft_putstr(char *s);
